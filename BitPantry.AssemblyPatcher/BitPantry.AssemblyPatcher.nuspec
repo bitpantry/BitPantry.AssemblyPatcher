@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Jeff Hewitt</authors>
+    <owners>Jeff Hewitt</owners>
+    <licenseUrl>https://assemblypatcher.codeplex.com/license</licenseUrl>
+    <projectUrl>https://assemblypatcher.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The BitPantry Assembly Patcher is a small utility that can patch your AssemblyInfo.cs version using a flexible and pluggable version pattern approach.</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>AssemblyInfo Patcher Assembly Version Patch</tags>
+  </metadata>
+</package>

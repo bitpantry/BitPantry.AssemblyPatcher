@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9B3108F0-7A63-4F98-B79A-1169FEC25E89}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitPantry.AssemblyPatcher", "BitPantry.AssemblyPatcher\BitPantry.AssemblyPatcher.csproj", "{D27D01B3-1F79-43F8-8282-1DC8688B81DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitPantry.AssemblyPatcher.Tests", "BitPantry.AssemblyPatcher.Tests\BitPantry.AssemblyPatcher.Tests.csproj", "{F8F41D5D-4E2A-464E-8AA0-ABD2D3D79FDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{8C7FB932-1B68-4356-BEB2-8CA46DD8EF80}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D27D01B3-1F79-43F8-8282-1DC8688B81DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27D01B3-1F79-43F8-8282-1DC8688B81DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27D01B3-1F79-43F8-8282-1DC8688B81DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27D01B3-1F79-43F8-8282-1DC8688B81DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F41D5D-4E2A-464E-8AA0-ABD2D3D79FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F41D5D-4E2A-464E-8AA0-ABD2D3D79FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F41D5D-4E2A-464E-8AA0-ABD2D3D79FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F41D5D-4E2A-464E-8AA0-ABD2D3D79FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
