@@ -1,0 +1,1 @@
+Added these TFS dependencies from TeamExplorer installation. Added here in case you don't have TeamExplorer installed.

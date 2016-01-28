@@ -18,6 +18,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{298D0B17-7BBC-4F5B-910F-AE977D6733A4}"
+	ProjectSection(SolutionItems) = preProject
+		lib\Microsoft.TeamFoundation.Client.dll = lib\Microsoft.TeamFoundation.Client.dll
+		lib\Microsoft.TeamFoundation.dll = lib\Microsoft.TeamFoundation.dll
+		lib\Microsoft.TeamFoundation.VersionControl.Client.dll = lib\Microsoft.TeamFoundation.VersionControl.Client.dll
+		lib\readme.txt = lib\readme.txt
 	EndProjectSection
 EndProject
 Global
