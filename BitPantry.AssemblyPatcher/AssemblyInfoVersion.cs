@@ -43,11 +43,12 @@ namespace BitPantry.AssemblyPatcher
         {
             Type = type;
 
-            var searchString = string.Format("{0}assembly: {1}(\"", AppConfigFacade.AttributeDemarcationCharacters[0], type);
+            var searchString = $"{AppConfigFacade.AttributeDemarcationCharacters[0]}assembly: {type}(\"";
             var targetLine = targetFileContents.FirstOrDefault(l => l.StartsWith(searchString, StringComparison.OrdinalIgnoreCase));
 
             if (string.IsNullOrEmpty(targetLine))
-                throw new ArgumentException(string.Format("The given target file contents does not have the \"{0}\" assembly version type.", type));
+                throw new ArgumentException(
+                    $"The given target file contents does not have the \"{type}\" assembly version type.");
 
             Index = new List<string>(targetFileContents).IndexOf(targetLine);
             Version = new Version(targetLine.Replace(searchString, string.Empty).Replace(string.Format("\"){0}", AppConfigFacade.AttributeDemarcationCharacters[1]), string.Empty).Trim());
@@ -95,14 +96,8 @@ namespace BitPantry.AssemblyPatcher
         /// <returns>The string representation ofthe assembly version line</returns>
         public override string ToString()
         {
-            return string.Format("{0}assembly: {1}(\"{2}.{3}.{4}.{5}\"){6}",
-                AppConfigFacade.AttributeDemarcationCharacters[0],
-                Type,
-                Version.Major,
-                Version.Minor,
-                Version.Build,
-                Version.Revision,
-                AppConfigFacade.AttributeDemarcationCharacters[1]);
+            return
+                $"{AppConfigFacade.AttributeDemarcationCharacters[0]}assembly: {Type}(\"{Version.Major}.{Version.Minor}.{Version.Build}.{Version.Revision}\"){AppConfigFacade.AttributeDemarcationCharacters[1]}";
         }
     }
 }
