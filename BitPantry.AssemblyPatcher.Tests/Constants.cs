@@ -2,8 +2,6 @@
 {
     class Constants
     {
-        public const string AssemblyInfoFilePath = @"resources\assemblyInfo.cs.tst";
-
         public const string TestVersionPartGeneratorToken = "{testGenerator}";
 
         public static readonly string VersionPatternString = string.Format("1.{{#}}.{0}.{1}",

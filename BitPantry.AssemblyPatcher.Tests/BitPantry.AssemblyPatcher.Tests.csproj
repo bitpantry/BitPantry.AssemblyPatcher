@@ -58,6 +58,12 @@
     <Compile Include="AssemblyInfoFileTests.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TemporaryFile.cs" />
     <Compile Include="TestGenerators\TestGenerator.cs" />
     <Compile Include="VersionPartGeneratorsCollectionTests.cs" />
     <Compile Include="VersionPatcherTests.cs" />
@@ -65,15 +71,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Resources\AssemblyInfo.cs.tst">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Resources\AssemblyInfo.cs.tst" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BitPantry.AssemblyPatcher\BitPantry.AssemblyPatcher.csproj">
       <Project>{d27d01b3-1f79-43f8-8282-1dc8688b81db}</Project>
       <Name>BitPantry.AssemblyPatcher</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
